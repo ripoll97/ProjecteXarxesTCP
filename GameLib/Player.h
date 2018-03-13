@@ -5,7 +5,7 @@ class Player
 {
 	int rol;
 	int life;
-
+	
 public:
 	Player();
 	~Player();
