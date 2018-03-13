@@ -3,7 +3,6 @@
 
 class Player
 {
-	int life; 
 	int rol;
 	int life;
 

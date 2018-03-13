@@ -4,7 +4,9 @@
 
 Player::Player()
 {
-
+	life = 0;
+	rol = 0;
+	
 }
 
 Player::~Player()
