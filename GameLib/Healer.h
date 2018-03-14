@@ -8,6 +8,12 @@ class Healer : Player
 
 public:
 	Healer();
+	void Healer::Action1(Boss boss);
+
+	void Healer::Action2(Boss boss);
+
+	void Healer::Action3(Boss boss);
+	
 	getAction(int num, Boss myBoss)
 	{
 		switch

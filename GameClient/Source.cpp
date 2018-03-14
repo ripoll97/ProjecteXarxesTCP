@@ -17,6 +17,5 @@ int main()
 		std::cout << "Connected to server\n";
 	}
 
-	std::mutex mu;
 
 }
