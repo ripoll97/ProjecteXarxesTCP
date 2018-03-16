@@ -1,1 +1,8 @@
-﻿  GameLib.vcxproj -> C:\Users\mripoll\Documents\GitHub\ProjecteXarxesTCP\x64\Release\GameLib.lib
+﻿  Archer.cpp
+  Boss.cpp
+  Healer.cpp
+  Mele.cpp
+  Player.cpp
+  PlayerInfo.cpp
+  Tank.cpp
+  GameLib.vcxproj -> C:\Users\mripoll\Documents\GitHub\ProjecteXarxesTCP\x64\Release\GameLib.lib
