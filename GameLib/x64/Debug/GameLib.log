@@ -1,8 +1,8 @@
 ﻿  Tank.cpp
+  PlayerInfo.cpp
   Player.cpp
   Mele.cpp
   Healer.cpp
-  Boss.cpp
   Archer.cpp
   Generating Code...
   GameLib.vcxproj -> C:\Users\mripoll\Documents\GitHub\ProjecteXarxesTCP\x64\Debug\GameLib.lib

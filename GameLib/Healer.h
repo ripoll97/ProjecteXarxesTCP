@@ -13,6 +13,16 @@ public:
 	void Healer::Action2(Boss boss);
 
 	void Healer::Action3(Boss boss);
+	
+	getAction(int num, Boss myBoss)
+	{
+		switch
+			case 1:
+				Action1(myBoss);
+	}
 
+	Action1(Boss myBoss) {
+		Boss -=
+	}
 	~Healer();
 };

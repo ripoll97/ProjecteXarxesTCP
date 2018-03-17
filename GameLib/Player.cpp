@@ -22,7 +22,7 @@ void Player::GetAction(int num, Boss boss) {
 	case 2:
 		Action2(boss);
 		break;
-	case 3:	
+	case 3:
 		Action3(boss);
 		break;
 	default:

@@ -59,7 +59,8 @@ int main()
 			{
 				if (ss.isReady(*aSocket[i]))
 				{
-				
+					//char buffer[2000];
+					//size_t bytesReceived;
 					Packet packet;
 					string typeMessage;
 
@@ -86,9 +87,9 @@ int main()
 						ss.remove(*aSocket[i]);
 
 						// Allibera memòria?
-						//aSocket[i]->disconnect;
+						aSocket[i]->disconnect;
 
-						//aSocket.erase[&i];
+						aSocket.erase[&i];
 
 						
 						mensaje = "S'ha desconectat el client: " + std::to_string(i);
