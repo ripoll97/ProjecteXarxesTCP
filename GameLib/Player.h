@@ -6,6 +6,7 @@ class Player
 {
 
 public:
+	int maxLife;
 	int life;
 
 	Player();

@@ -8,6 +8,8 @@ class Melee : public Player
 
 public:
 	Melee();
+	bool combo, isBuffed;
+
 	void Melee::Action1(Boss boss);
 
 	void Melee::Action2(Boss boss);

@@ -1,7 +1,6 @@
 ﻿  Source.cpp
-c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(21): warning C4244: 'argumento': conversión de 'float' a 'sf::Int32'; posible pérdida de datos
-c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(191): warning C4244: 'argumento': conversión de '::size_t' a 'float'; posible pérdida de datos
-c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(131): warning C4101: 'bs': variable local sin referencia
-c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(148): warning C4101: 'bs': variable local sin referencia
-  GameClient.vcxproj -> C:\Users\Miquel\Documents\GitHub\Platilla_3Projects\ProjecteXarxesTCP\x64\Debug\GameClient.exe
-  GameClient.vcxproj -> C:\Users\Miquel\Documents\GitHub\Platilla_3Projects\ProjecteXarxesTCP\x64\Debug\GameClient.pdb (Partial PDB)
+d:\arnau\enti\3r\programació de jocs en xarxa\projectexarxestcp\gameclient\source.cpp(21): warning C4244: 'argumento': conversión de 'float' a 'sf::Int32'; posible pérdida de datos
+d:\arnau\enti\3r\programació de jocs en xarxa\projectexarxestcp\gameclient\source.cpp(268): warning C4244: 'argumento': conversión de '::size_t' a 'float'; posible pérdida de datos
+d:\arnau\enti\3r\programació de jocs en xarxa\projectexarxestcp\gameclient\source.cpp(188): warning C4101: 'bs': variable local sin referencia
+d:\arnau\enti\3r\programació de jocs en xarxa\projectexarxestcp\gameclient\source.cpp(205): warning C4101: 'bs': variable local sin referencia
+  GameClient.vcxproj -> D:\Arnau\ENTI\3r\Programació de jocs en xarxa\ProjecteXarxesTCP\x64\Debug\GameClient.exe

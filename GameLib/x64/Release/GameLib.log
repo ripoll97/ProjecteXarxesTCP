@@ -1,2 +1,8 @@
-﻿  Player.cpp
-  GameLib.vcxproj -> C:\Users\Miquel\Documents\GitHub\Platilla_3Projects\ProjecteXarxesTCP\x64\Release\GameLib.lib
+﻿  Archer.cpp
+  Boss.cpp
+  Healer.cpp
+  Melee.cpp
+  Player.cpp
+  PlayerInfo.cpp
+  Tank.cpp
+  GameLib.vcxproj -> D:\Arnau\ENTI\3r\Programació de jocs en xarxa\ProjecteXarxesTCP\x64\Release\GameLib.lib

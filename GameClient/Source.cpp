@@ -59,17 +59,17 @@ int main()
 	bool game = false;
 
 	while (waiting) {
-		Packet recivedPacket;
-		sf::Socket::Status statusReceive = socket.receive(recivedPacket);
+		Packet receivedPacket;
+		sf::Socket::Status statusReceive = socket.receive(receivedPacket);
 		/*if (statusReceive == sf::Socket::NotReady) {
 			break;
 		}*/
 		if (statusReceive == sf::Socket::Done) {
 			string msg;
-			recivedPacket >> msg;
+			receivedPacket >> msg;
 			cout << msg << endl;
 			if (msg == "START") {
-				recivedPacket >> myRol;
+				receivedPacket >> myRol;
 				cout << myRol << endl;
 				waiting = false;
 				game = true;
@@ -88,12 +88,14 @@ int main()
 		while (true) {
 			Packet pack;
 			sf::Socket::Status statusReceive = socket.receive(pack);
-			if (statusReceive == sf::Socket::NotReady) {
+			if (statusReceive != sf::Socket::Done) {
+				cout << "Error receiving" << endl;
 				break;
 			}
 			else if (statusReceive == sf::Socket::Done) {
 				string command;
 				pack >> command;
+				cout << "Packet received with command: " + command << endl;
 				// No turn
 				if (command == "NT") {
 					// Block the send if it's an action, the player can't act
@@ -102,6 +104,22 @@ int main()
 				// Action
 				else if (command == "ACT") {
 					// Recive the world update (each player's life and boss)
+					string command;
+					pack >> command;
+					for (int i = 0; i < 4; i++) {
+						int life;
+						pack >> life;
+						aPlayers[i].life = life;
+					}
+					int life;
+					pack >> life;
+					boss.life = life;
+					cout << "Tank HP: " + aPlayers[0].life;
+					cout << "   Archer HP: " + aPlayers[1].life;
+					cout << "   Healer HP: " + aPlayers[2].life;
+					cout << "   Melee HP: " + aPlayers[3].life;	
+					cout << "   BOSS HP: " + boss.life << endl;
+
 				}
 				// Your turn
 				else if (command == "TURN") {
@@ -110,10 +128,11 @@ int main()
 				}
 				else if (command == "M") {
 					// Chat message
-					string messageRecived;
-					pack >> messageRecived;
-					messageRecived += "\0";
-					aMensajes.push_back(messageRecived);
+					string messagereceived;
+					pack >> messagereceived;
+					messagereceived += "\0";
+					aMensajes.push_back(messagereceived);
+					cout << "Message received: " + messagereceived << endl;
 				}
 			}
 			else if (statusReceive == sf::Socket::Disconnected) {
@@ -191,6 +210,10 @@ int main()
 								Packet pack;
 								string messageCommand = "M";
 								pack << messageCommand << mensaje;
+								sf::Socket::Status statusSend = socket.send(pack);
+								while (socketStatus == Socket::Status::Done) {
+									cout << "Message sent" << endl;
+								}
 							}
 							else {
 								// Command

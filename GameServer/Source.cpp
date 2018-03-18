@@ -47,7 +47,7 @@ int main()
 	Packet packet;
 	//std::size_t bs;
 	bool messageReceived = false;
-	int maxPlayers = 2;
+	int maxPlayers = 4;
 
 	bool game = false;
 	bool command = false;
@@ -55,7 +55,7 @@ int main()
 	vector<Player> aPlayers;
 	Boss boss = Boss();
 	int turn = 0;
-	string recivedMessage;
+	string receivedMessage;
 
 	sf::TcpListener listener;
 	sf::Socket::Status status = listener.listen(50000);
@@ -132,7 +132,7 @@ int main()
 						break;
 					}
 					else if (statusReceive == sf::Socket::Done) {
-						std::cout << "Packet recived from client " << i << endl;
+						std::cout << "Packet received from client " << i << endl;
 						packet >> typeMessage;
 
 						if (typeMessage == "C") {
@@ -155,9 +155,7 @@ int main()
 						else if (typeMessage == "M") {
 							// Receive a chat message
 							// Chat
-							packet >> recivedMessage;
-							
-
+							packet >> receivedMessage;
 							message = true;
 						}
 
@@ -210,19 +208,21 @@ int main()
 				if (message) {
 					Packet messagePacket;
 					string messageCommand = "M";
-					messagePacket << messageCommand << recivedMessage;
+					messagePacket << messageCommand << receivedMessage;
+					
 					for (int j = 0; j < aSocket.size(); j++) {
 						if (j != clientN)
 						{
 							std::cout << " L'envii al client " << j << "\n";
 							sf::Socket::Status statusSend = aSocket[j]->send(messagePacket);
 							if (statusSend == sf::Socket::Status::Done)
-								std::cout << "L'he enviat correctament \n";
+								std::cout << "Sent correctly: " + receivedMessage+ "\n";
 						}
 					}
 					message = false;
 					messageReceived = false;
 					mensaje = "";
+					receivedMessage = "";
 				}
 
 			}
@@ -246,7 +246,7 @@ int main()
 						break;
 					}
 					else if (statusReceive == sf::Socket::Done) {
-						std::cout << "Packet recived\n";
+						std::cout << "Packet received\n";
 						packet >> typeMessage;
 
 						if (typeMessage == "C") {

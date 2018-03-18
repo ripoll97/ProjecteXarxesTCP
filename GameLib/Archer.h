@@ -7,6 +7,8 @@ class Archer : public Player
 	
 
 public:
+	bool combo, isBuffed;
+	int bonusDmg;
 	Archer();
 	void Archer::Action1(Boss boss);
 

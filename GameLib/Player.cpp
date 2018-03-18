@@ -4,6 +4,7 @@
 
 Player::Player()
 {
+	maxLife = 0;
 	life = 0;
 
 }
