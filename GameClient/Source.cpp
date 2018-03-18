@@ -88,7 +88,7 @@ int main()
 		while (true) {
 			Packet pack;
 			sf::Socket::Status statusReceive = socket.receive(pack);
-			if (statusReceive != sf::Socket::Done) {
+			if (statusReceive == sf::Socket::NotReady) {
 				cout << "Error receiving" << endl;
 				break;
 			}
