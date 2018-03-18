@@ -2,7 +2,7 @@
 #include <SFML\Graphics.hpp>
 #include "Player.h"
 
-class Archer : Player
+class Archer : public Player
 {
 	
 

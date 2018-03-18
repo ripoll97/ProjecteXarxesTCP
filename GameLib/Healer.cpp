@@ -2,7 +2,7 @@
 
 Healer::Healer()
 {
-
+	life = 80;
 }
 
 Healer::~Healer()

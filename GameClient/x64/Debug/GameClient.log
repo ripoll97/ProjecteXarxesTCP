@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(21): warning C4244: 'argumento': conversión de 'float' a 'sf::Int32'; posible pérdida de datos
+c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(191): warning C4244: 'argumento': conversión de '::size_t' a 'float'; posible pérdida de datos
+c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(131): warning C4101: 'bs': variable local sin referencia
+c:\users\miquel\documents\github\platilla_3projects\projectexarxestcp\gameclient\source.cpp(148): warning C4101: 'bs': variable local sin referencia
+  GameClient.vcxproj -> C:\Users\Miquel\Documents\GitHub\Platilla_3Projects\ProjecteXarxesTCP\x64\Debug\GameClient.exe
+  GameClient.vcxproj -> C:\Users\Miquel\Documents\GitHub\Platilla_3Projects\ProjecteXarxesTCP\x64\Debug\GameClient.pdb (Partial PDB)

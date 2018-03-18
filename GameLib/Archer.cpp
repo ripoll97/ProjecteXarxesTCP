@@ -2,7 +2,7 @@
 
 Archer::Archer()
 {
-
+	life = 75;
 }
 
 Archer::~Archer()

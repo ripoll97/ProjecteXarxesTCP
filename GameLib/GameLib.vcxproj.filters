@@ -33,10 +33,10 @@
     <ClInclude Include="Healer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Mele.h">
+    <ClInclude Include="Boss.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Boss.h">
+    <ClInclude Include="Melee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,10 +56,10 @@
     <ClCompile Include="Healer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Mele.cpp">
+    <ClCompile Include="Boss.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Boss.cpp">
+    <ClCompile Include="Melee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

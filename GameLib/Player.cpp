@@ -5,13 +5,19 @@
 Player::Player()
 {
 	life = 0;
-	rol = 0;
-	
+
 }
 
 Player::~Player()
 {
 }
+
+void Player::Action1(Boss boss) {}
+
+void Player::Action2(Boss boss) {}
+
+void Player::Action3(Boss boss) {}
+
 
 void Player::GetAction(int num, Boss boss) {
 	switch (num)

@@ -2,11 +2,12 @@
 #include <SFML\Graphics.hpp>
 #include "Player.h"
 
-class Tank : Player
+class Tank : public Player
 {
 
 
 public:
+	
 	Tank();
 	void Tank::Action1(Boss boss);
 

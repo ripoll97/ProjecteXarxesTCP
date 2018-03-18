@@ -3,9 +3,9 @@
 
 class Boss
 {
-	int life;
 
 public:
+	int life;
 	Boss();
 	~Boss();
 };

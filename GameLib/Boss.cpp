@@ -3,7 +3,7 @@
 
 Boss::Boss()
 {
-	life = 0;
+	life = 100;
 
 }
 

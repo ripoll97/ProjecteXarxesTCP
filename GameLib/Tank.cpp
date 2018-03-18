@@ -2,7 +2,7 @@
 
 Tank::Tank()
 {
-
+	life = 120;
 }
 
 Tank::~Tank()

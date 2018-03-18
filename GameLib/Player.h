@@ -1,12 +1,13 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 #include "Boss.h"
+
 class Player
 {
-	int rol;
-	int life;
-	
+
 public:
+	int life;
+
 	Player();
 	void GetAction(int num, Boss boss);
 	virtual void Action1(Boss boss);

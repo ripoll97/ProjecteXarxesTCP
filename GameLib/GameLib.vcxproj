@@ -146,7 +146,7 @@
     <ClInclude Include="Archer.h" />
     <ClInclude Include="Boss.h" />
     <ClInclude Include="Healer.h" />
-    <ClInclude Include="Mele.h" />
+    <ClInclude Include="Melee.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerInfo.h" />
     <ClInclude Include="Tank.h" />
@@ -155,7 +155,7 @@
     <ClCompile Include="Archer.cpp" />
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Healer.cpp" />
-    <ClCompile Include="Mele.cpp" />
+    <ClCompile Include="Melee.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerInfo.cpp" />
     <ClCompile Include="Tank.cpp" />
